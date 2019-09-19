@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function call()
+{
+var n1,n2,n3;
+n1=parseInt(prompt("Enter a value",0));
+n2=parseInt(prompt("Enter another value",0));
+n3=n1+n2;
+alert("result is : "+n3);
+call2(n1,n2);
+}
+function call2(n1,n2)
+{
+	res=n1-n2;
+	alert("Subtraction : "+res);
+	}
+function samp(s1,s2)
+{  
+	op=s1+s2;
+	//confirm("You are entered : "+s1+" "+s2);
+     confirm("Result : "+op);
+	}
+</script>
+</head>
+<body>
+
+
+<form>
+<input type="button" value="maths" onclick=call();>
+<!-- <input type="button" value="click" onclick=samp(2,3);> -->
+
+</form>
+</body>
+</html>

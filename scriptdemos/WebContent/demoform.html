@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function data()
+{
+	var name,age,email,phone;
+	name=document.getElementById("t1").value;
+	age=document.getElementById("age").value;
+	email=document.getElementById("email").value;
+	phone=document.getElementById("contact").value;
+	
+	document.write(name+" "+age+" "+email+"  "+phone);
+	
+	}
+
+
+</script>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<td>
+
+Enter your name <input type="text" id="t1">
+Enter your age <input type="text" id="age">
+E-mail <input type="email" id="email">
+Contact num. <input type="tel" id="contact">
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" onclick=data(); value="submit">
+<input type="reset">
+</td>
+</tr>
+
+</form>
+</table>
+</body>
+</html>
